@@ -1,8 +1,6 @@
 # Win11 Tweaker
 Powerful Tool for Personalizing and Enhancing Windows 11
 ![win11 tweaker banner](https://github.com/iandiv/Win11Tweaker/assets/28383248/2ebbc0b3-355b-4201-9189-e9ab9c6d7673)
-# Preview
-![explorer_CjxFSFGzNZ](https://github.com/iandiv/Win11Tweaker/assets/28383248/ff4b0a5d-6c65-4cb8-b033-87eb814365eb)
 
 # Features
 Win11Tweaker provides the following key features to enhance your Windows 11 experience
