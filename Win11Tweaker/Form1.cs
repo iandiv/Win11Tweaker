@@ -540,15 +540,15 @@ if (Test-Path $registryPath) {
             setPreview(new System.Drawing.Point(-5, -3), 
                 new System.Drawing.Size(166, 95),
                 Resources.lockScreenImage, 
-                "Lock Screen", 
-                "Disable Windows 11 Lock Screen");
+                "Lock Screen",
+                "Disable the Windows 11 lock screen, directly access the login screen");
 
 
         }
 
         private void contextMenuPanel_Click(object sender, EventArgs e)
         {
-            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.contextMenuImage, "Classic Context Menu", "Bring back the classic context menu from previous version of Windows");
+            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.contextMenuImage, "Classic Context Menu", "Enable the classic context menu to bring back the familiar right-click options");
 
 
         }
@@ -581,25 +581,25 @@ if (Test-Path $registryPath) {
 
         private void webSearchPanel_Click(object sender, EventArgs e)
         {
-            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.webSearchImage, "Web Search", "Disable Web Search result in Windows 11 Start Menu");
+            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.webSearchImage, "Web Search", "Disable web search results in the Start menu for a more focused search experience.");
 
         }
 
         private void compactViewPanel_Click(object sender, EventArgs e)
         {
-            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.compactViewImage, "Compact View", "Revert back ther Compact View in Windows Explorer");
+            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.compactViewImage, "Compact View", "Enable a more streamlined and efficient view in the Windows 11 File Explorer.");
 
         }
 
         private void detailsPanePanel_Click(object sender, EventArgs e)
         {
-            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.detialPaneImage, "Details Pane", "Add the Details Pane to the context menu for easier access");
+            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.detialPaneImage, "Details Pane", "Add a details pane to the context menu for quick access to file details");
 
         }
 
         private void printSCRPanel_Click(object sender, EventArgs e)
         {
-            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.printSCRImage, "Print Screen Sound", "Enable Sound when pressing PRTSC key");
+            setPreview(new System.Drawing.Point(-5, -3), new System.Drawing.Size(166, 95), Resources.printSCRImage, "Print Screen Sound", " Enable a sound notification when pressing the Print Screen key");
 
         }
 

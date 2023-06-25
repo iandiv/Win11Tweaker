@@ -185,7 +185,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(27, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 19);
+            this.label2.Size = new System.Drawing.Size(316, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "Classic Context Menu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -250,7 +250,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(27, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 19);
+            this.label5.Size = new System.Drawing.Size(316, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "Web Search";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -315,7 +315,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(27, 19);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 19);
+            this.label12.Size = new System.Drawing.Size(316, 19);
             this.label12.TabIndex = 4;
             this.label12.Text = "Compact View";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -380,7 +380,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(27, 19);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 19);
+            this.label10.Size = new System.Drawing.Size(316, 19);
             this.label10.TabIndex = 4;
             this.label10.Text = "Details Pane";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -460,7 +460,7 @@
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(27, 19);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 19);
+            this.label14.Size = new System.Drawing.Size(316, 19);
             this.label14.TabIndex = 4;
             this.label14.Text = "Lock Screen";
             this.label14.Click += new System.EventHandler(this.label14_Click);
@@ -510,7 +510,7 @@
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(27, 19);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 19);
+            this.label16.Size = new System.Drawing.Size(316, 19);
             this.label16.TabIndex = 4;
             this.label16.Text = "Print Screen Sound";
             this.label16.Click += new System.EventHandler(this.label16_Click);
@@ -538,9 +538,9 @@
             this.previewDesc.BackColor = System.Drawing.Color.Transparent;
             this.previewDesc.Font = new System.Drawing.Font("Segoe UI Variable Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previewDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(199)))), ((int)(((byte)(200)))));
-            this.previewDesc.Location = new System.Drawing.Point(215, 114);
+            this.previewDesc.Location = new System.Drawing.Point(215, 117);
             this.previewDesc.Name = "previewDesc";
-            this.previewDesc.Size = new System.Drawing.Size(219, 45);
+            this.previewDesc.Size = new System.Drawing.Size(242, 54);
             this.previewDesc.TabIndex = 18;
             this.previewDesc.Text = "Powerful Tool for Personalizing and Enhancing Windows 11";
             this.previewDesc.Click += new System.EventHandler(this.previewDesc_Click);
@@ -551,7 +551,7 @@
             this.previewTitle.BackColor = System.Drawing.Color.Transparent;
             this.previewTitle.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previewTitle.ForeColor = System.Drawing.Color.White;
-            this.previewTitle.Location = new System.Drawing.Point(214, 93);
+            this.previewTitle.Location = new System.Drawing.Point(214, 96);
             this.previewTitle.Name = "previewTitle";
             this.previewTitle.Size = new System.Drawing.Size(54, 21);
             this.previewTitle.TabIndex = 17;
