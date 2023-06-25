@@ -16,7 +16,7 @@ namespace Win11Tweaker
     {
         private DialogForm dialog;
         private bool appLoaded = false;
-       
+        
         public Form1()
         {
            
