@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Win11Tweaker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Powerful Tool for Personalizing and Enhancing Windows 11")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("IanDiv")]
 [assembly: AssemblyProduct("Win11Tweaker")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]

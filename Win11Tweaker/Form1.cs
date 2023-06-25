@@ -16,8 +16,7 @@ namespace Win11Tweaker
     {
         private DialogForm dialog;
         private bool appLoaded = false;
-        private VScrollBar vScrollBar1;
-        private string temp = "";
+       
         public Form1()
         {
            
