@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Management.Automation;
+using System.Diagnostics;
 using System.Windows.Forms;
 using WinBlur;
 
@@ -26,29 +26,25 @@ namespace Win11Tweaker
 
         private void positiveBtn_Click(object sender, EventArgs e)
         {
-            using (PowerShell ps = PowerShell.Create())
-            {
+          
                 switch (Properties.Settings.Default.val)
                 {
-                    case 0:
-                        ps.AddScript(@"
-Stop-Process -name explorer
-
-                            ");
-                        break;
-                    case 1:
-                        ps.AddScript(@"
-
-Shutdown -l
-                            ");
-                        break;
-                }
+                case 0:
+                    Process[] explorerProcesses = Process.GetProcessesByName("explorer");
+                    foreach (Process process in explorerProcesses)
+                    {
+                        process.Kill();
+                    }
+                    break;
+                case 1:
+                    Process.Start("shutdown", "-l");
+                    break;
+            }
                
 
              
-                var output = ps.Invoke();
                 this.Close();
-            }
+            
         }
     }
 }
