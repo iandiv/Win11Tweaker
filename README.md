@@ -1,9 +1,9 @@
 # Win11 Tweaker
 Powerful Tool for Personalizing and Enhancing Windows 11
-![win11 tweaker banner](https://github.com/iandiv/Win11Tweaker/assets/28383248/2ebbc0b3-355b-4201-9189-e9ab9c6d7673)
-
+![win11 tweaker banner](https://github.com/iandiv/Win11Tweaker/assets/28383248/78b2110a-13c8-49a8-a9c5-13755de87e73)
 
 # Features
+
 Win11Tweaker provides the following key features to enhance your Windows 11 experience
 
 | Key | Description |
@@ -16,7 +16,8 @@ Win11Tweaker provides the following key features to enhance your Windows 11 expe
 |Print Screen Sound |  Enable a sound notification when pressing the Print Screen key, providing audio feedback to confirm the successful capture of the screen |
 
 # Preview
-![screenshot](https://github.com/iandiv/Win11Tweaker/assets/28383248/3c7564a4-2976-48e0-be51-6f0cc7a4546c)
+![screenshot](https://github.com/iandiv/Win11Tweaker/assets/28383248/900b7d17-1bb8-4f90-9cf2-fc30229dd2dd)
+
 
 # Download
 
