@@ -346,7 +346,7 @@ namespace Win11Tweaker
                         {
                             Registry.CurrentUser.OpenSubKey(keyPath, true)?.DeleteValue("DisableSearchBoxSuggestions", false);
                         }
-                        onSignOut();
+                        onSignOut(); 
                         break;
                     case nameof(Settings.Default.lockScreennChecked):
                         keyPath = @"SOFTWARE\Policies\Microsoft\Windows\Personalization";
