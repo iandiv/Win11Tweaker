@@ -20,8 +20,9 @@ Win11Tweaker provides the following key features to enhance your Windows 11 expe
 
 # Download
 
- | [Win11 Tweaker](https://github.com/iandiv/Win11Tweaker/releases) |
+ | Release|
  | ----------- |
+ | [Win11 Tweaker](https://github.com/iandiv/Win11Tweaker/releases) |
 
 # Disclaimer
 Win11Tweaker is a third-party application and is not affiliated with Microsoft Corporation. Please use this tool responsibly and at your own risk. The developers of Win11Tweaker are not responsible for any damage or loss caused by the use of this application.
