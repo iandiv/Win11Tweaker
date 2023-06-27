@@ -1,6 +1,8 @@
 # Win11 Tweaker
 Powerful Tool for Personalizing and Enhancing Windows 11
-![win11 tweaker banner](https://github.com/iandiv/Win11Tweaker/assets/28383248/78b2110a-13c8-49a8-a9c5-13755de87e73)
+![POWERPNT_pcjq0bldew](https://github.com/iandiv/Win11Tweaker/assets/28383248/597bb94d-3990-4ee9-b7f8-ac658f0a701d)
+
+
 
 # Features
 
