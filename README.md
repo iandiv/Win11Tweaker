@@ -18,8 +18,7 @@ Win11Tweaker provides the following key features to enhance your Windows 11 expe
 |Print Screen Sound |  Enable a sound notification when pressing the Print Screen key, providing audio feedback to confirm the successful capture of the screen |
 
 # Preview
-![screenshot](https://github.com/iandiv/Win11Tweaker/assets/28383248/900b7d17-1bb8-4f90-9cf2-fc30229dd2dd)
-
+![win11 tweaker](https://github.com/iandiv/Win11Tweaker/assets/28383248/5573ac96-a821-4b54-b7bd-94de8d969650)
 
 # Download
 
