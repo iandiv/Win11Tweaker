@@ -25,6 +25,18 @@ Win11Tweaker provides the following key features to enhance your Windows 11 expe
  | Release|
  | ----------- |
  | [Win11 Tweaker](https://github.com/iandiv/Win11Tweaker/releases) |
+##  Dependecies
+
+
+### CustomComponent.dll
+
+1.The `CustomComponent.dll` is available in the [Dependencies](https://github.com/iandiv/Win11Tweaker/tree/master/Dependencies) folder. Download it from [here](https://github.com/iandiv/Win11Tweaker/tree/master/Dependencies).
+
+### WinBlur
+
+1. **NuGet Package**: WinBlur can be easily obtained from NuGet Packages.
+
+2. **GitHub Repository**: Alternatively, you can visit the [WinBlur GitHub repository](https://github.com/voidZiAD/WinBlur) for more information.
 
 ## Contribute
 Win11 Tweaker is an open-source project, and we welcome contributions from the community. Whether you want to report issues, suggest new features, or submit code improvements, your help is appreciated.
