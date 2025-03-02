@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Win11 Tweaker (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Win11 Tweaker (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

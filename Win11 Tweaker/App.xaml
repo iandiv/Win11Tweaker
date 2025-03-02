@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="Win11_Tweaker.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win11_Tweaker">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+
+            <Style x:Key="NoUnderlineTextBoxStyle" TargetType="TextBox">
+               
+                <Setter Property="FocusVisualPrimaryBrush" Value="Transparent"/>
+                <Setter Property="FocusVisualSecondaryBrush" Value="Transparent"/>
+            </Style>
+
+           
+            <ResourceDictionary.ThemeDictionaries>
+                <!-- Light Theme -->
+              
+                <ResourceDictionary x:Key="Light">
+                    <Color x:Key="CustomGridBackgroundColor">#b0ffffff</Color>
+
+                    <SolidColorBrush x:Key="CustomGridBackground" Color="{StaticResource CustomGridBackgroundColor}" />
+
+                    <SolidColorBrush x:Key="BorderBrush" Color="#50bbbbbb" />
+                    <SolidColorBrush x:Key="CustomHotkeyBackground" Color="#30808080" />
+                    <BitmapImage x:Key="GitHubIcon" UriSource="ms-appx:///Assets/github_dark.png"/>
+                    <BitmapImage x:Key="CoffeeIcon" UriSource="ms-appx:///Assets/coffee_dark.png"/>
+                </ResourceDictionary>
+
+                <!-- Dark Theme -->
+                <ResourceDictionary x:Key="Dark">
+                    <Color x:Key="CustomGridBackgroundColor">#30606060</Color>
+                    <SolidColorBrush x:Key="CustomGridBackground" Color="{StaticResource CustomGridBackgroundColor}" />
+                    <SolidColorBrush x:Key="BorderBrush" Color="#30111111" />
+                    <SolidColorBrush x:Key="CustomHotkeyBackground" Color="#30606060" />
+                    <BitmapImage x:Key="GitHubIcon" UriSource="ms-appx:///Assets/github_light.png"/>
+                    <BitmapImage x:Key="CoffeeIcon" UriSource="ms-appx:///Assets/coffee_light.png"/>
+
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
