@@ -8,15 +8,16 @@ Win11 Tweaker allows you to customize and optimize Windows 11 with ease.
 
 | Feature | Description |
 |---------|------------|
-| **Case Converter** | Convert text to different text cases. |
-| **Clean Desktop** | Hide icons by double-clicking on the desktop. |
-| **Disable Background Apps** | Prevent apps from running in the background. |
+| **Case Converter** 🆕 | Convert text to different text cases. |
+| **Clean Desktop** 🆕 | Hide icons by double-clicking on the desktop. |
+| **Disable Background Apps** 🆕 | Prevent apps from running in the background. |
 | **Classic Context Menu** | Restore the classic right-click menu for a familiar user experience. |
 | **Compact View** | Enable or disable compact view in File Explorer. |
 | **Details Pane in Context Menu** | Add a Details Pane to File Explorer's right-click menu. |
-| **Disable Web Search** | Remove web search results from the Start menu . |
+| **Disable Web Search** | Remove web search results from the Start menu. |
 | **Disable Lock Screen** | Skip the Windows 11 lock screen and go directly to login. |
 | **Print Screen Sound Notification** | Play a sound when pressing the Print Screen key. |
+
 
 ## Preview
 
