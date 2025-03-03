@@ -1,56 +1,39 @@
 # Win11 Tweaker
-Powerful Tool for Personalizing and Enhancing Windows 11
-![POWERPNT_pcjq0bldew](https://github.com/iandiv/Win11Tweaker/assets/28383248/597bb94d-3990-4ee9-b7f8-ac658f0a701d)
+A Free & Powerful Tool for Personalizing and Enhancing Windows 11  
 
-
+![icon](https://github.com/user-attachments/assets/41e0dc88-ec6f-484a-8be7-0a82470a3b68)
 
 ## Features
+Win11 Tweaker allows you to customize and optimize Windows 11 with ease.
 
-Win11Tweaker provides the following key features to enhance your Windows 11 experience
+| Feature | Description |
+|---------|------------|
+| **Case Converter** 🆕 | Convert text to different text cases. |
+| **Clean Desktop** 🆕 | Hide icons by double-clicking on the desktop. |
+| **Disable Background Apps** 🆕 | Prevent apps from running in the background. |
+| **Classic Context Menu** | Restore the classic right-click menu for a familiar user experience. |
+| **Compact View** | Enable or disable compact view in File Explorer. |
+| **Details Pane in Context Menu** | Add a Details Pane to File Explorer's right-click menu. |
+| **Disable Web Search** | Remove web search results from the Start menu. |
+| **Disable Lock Screen** | Skip the Windows 11 lock screen and go directly to login. |
+| **Print Screen Sound Notification** | Play a sound when pressing the Print Screen key. |
 
-| Key | Description |
- | ----------- | ----------- |
- | Classic Context Menu | Enable the classic context menu to bring back the familiar right-click options |
-| Web Search | Disable web search results in the Start menu, providing a more focused and efficient search experience without displaying web-based results |
-|Lock Screen | Disable the Windows 11 lock screen, allowing you to bypass it and directly access the login screen  |
-|Compact View | Enable compact view in the Windows 11 File Explorer, reducing spacing between icons and elements |
-|Details Pane | Add a details pane to the context menu, allowing you to quickly access file details, properties, and metadata directly from the right-click menu|
-|Print Screen Sound |  Enable a sound notification when pressing the Print Screen key, providing audio feedback to confirm the successful capture of the screen |
 
 ## Preview
-![win11 tweaker](https://github.com/iandiv/Win11Tweaker/assets/28383248/5573ac96-a821-4b54-b7bd-94de8d969650)
+
+![explorer_YbnD4X6zWL](https://github.com/user-attachments/assets/8b840c18-ac27-462d-816d-515a4b8fd008)
 
 ## Download
+📥 Get the latest version from the [Releases](https://github.com/iandiv/Win11Tweaker/releases) page.
 
- | Release|
- | ----------- |
- | [Win11 Tweaker](https://github.com/iandiv/Win11Tweaker/releases) |
-##  Dependecies
-
-
-### CustomComponent.dll
-
-1.The `CustomComponent.dll` is available in the [Dependencies](https://github.com/iandiv/Win11Tweaker/tree/master/Dependencies) folder. Download it from [here](https://github.com/iandiv/Win11Tweaker/tree/master/Dependencies).
-
-### WinBlur
-
-1. **NuGet Package**: WinBlur can be easily obtained from NuGet Packages.
-
-2. **GitHub Repository**: Alternatively, you can visit the [WinBlur GitHub repository](https://github.com/voidZiAD/WinBlur) for more information.
+## Support the Project ❤️
+If you find Win11 Tweaker useful, consider supporting its development:  
+👉 [Buy me a coffee on Ko-Fi ☕](https://ko-fi.com/iandiv)
 
 ## Contribute
-Win11 Tweaker is an open-source project, and we welcome contributions from the community. Whether you want to report issues, suggest new features, or submit code improvements, your help is appreciated.
+Win11 Tweaker is open-source, and community contributions are welcome! Feel free to report issues, suggest new features, or submit improvements.
 
 ## Disclaimer
-Win11Tweaker is a third-party application and is not affiliated with Microsoft Corporation. Please use this tool responsibly and at your own risk. The developers of Win11Tweaker are not responsible for any damage or loss caused by the use of this application.
+Win11 Tweaker is a third-party tool **not affiliated with Microsoft Corporation**. Use it at your own risk. Always create a system restore point before applying changes.
 
-Remember to create a system restore point before making any changes to your Windows 11 settings using Win11Tweaker.
-
-
-
-
-
-
-
-
-(c) 2023 | IanDiv
+© 2025 | **IanDiv**
