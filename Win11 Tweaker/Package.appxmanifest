@@ -10,7 +10,7 @@
   <Identity
     Name="a29cc26d-5f9e-4fa1-9b84-85f1cdba9021"
     Publisher="CN=Ian Divinagracia"
-    Version="1.0.0.0" />
+    Version="2.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="a29cc26d-5f9e-4fa1-9b84-85f1cdba9021" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
