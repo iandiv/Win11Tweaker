@@ -65,7 +65,8 @@
             </div>
             <br>
 
-            <p class="mt-3 fw-bold h4"><span id="downloadCount">28,288</span> downloads</p>
+            <p class="mt-3 fw-bold h4">
+                <span id="total-iandiv-Win11Tweaker">0</span> downloads</p>
         </div>
     </section>
     <br>
@@ -199,8 +200,7 @@
                       
                         <li class="list-inline-item"><a href="https://github.com/iandiv" class="text-white"><i
                                     class="bi bi-github"></i></a></li>
-         <li class="list-inline-item"><a href="https://x.com/iandiv_" class="text-white">
-       <i class="bi bi-twitter-x"></i>
+       
                     </ul>
                 </div>
             </div>
@@ -212,6 +212,53 @@
             </div>
         </div>
     </footer>
+    <script>
+
+async function refreshRepo() {
+    const username = "iandiv";
+    const repo = "Win11Tweaker";
+    const repoId = `${username}-${repo}`;
+    const url = `https://grdt-lhi57kb2e-iandivs-projects.vercel.app/api/downloads/${username}/${repo}`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Failed to fetch data from the API.");
+
+        const data = await response.json();
+        let totalDownloads = data.totalDownloads;
+
+        animateCounter(totalDownloads, repoId);
+
+        localStorage.setItem(repoId, totalDownloads);
+    } catch (error) {
+        document.getElementById(`total-${repoId}`).textContent = "Error";
+        console.error("Error fetching data:", error);
+    }
+}
+
+
+function animateCounter(targetValue, repoId) {
+    const element = document.getElementById(`total-${repoId}`);
+    const duration = 2000; 
+    const startValue = 0;
+    const increment = targetValue / (duration / 16); 
+
+    let currentValue = startValue;
+
+    const timer = setInterval(() => {
+        currentValue += increment;
+        if (currentValue >= targetValue) {
+            clearInterval(timer);
+            currentValue = targetValue;
+        }
+        element.textContent = Math.floor(currentValue).toLocaleString();
+    }, 16); 
+}
+
+refreshRepo();
+
+setInterval(refreshRepo, 30000);
+
     </script>
 </body>
 
