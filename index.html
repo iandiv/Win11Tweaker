@@ -213,6 +213,7 @@
         </div>
     </footer>
     <script>
+let hasAnimated = false; 
 
 async function refreshRepo() {
     const username = "iandiv";
@@ -227,15 +228,19 @@ async function refreshRepo() {
         const data = await response.json();
         let totalDownloads = data.totalDownloads;
 
-        animateCounter(totalDownloads, repoId);
-
         localStorage.setItem(repoId, totalDownloads);
+
+        if (!hasAnimated) {
+            animateCounter(totalDownloads, repoId);
+            hasAnimated = true; 
+        } else {
+            document.getElementById(`total-${repoId}`).textContent = totalDownloads.toLocaleString() + " downloads";
+        }
     } catch (error) {
         document.getElementById(`total-${repoId}`).textContent = "Error";
         console.error("Error fetching data:", error);
     }
 }
-
 
 function animateCounter(targetValue, repoId) {
     const element = document.getElementById(`total-${repoId}`);
@@ -251,8 +256,8 @@ function animateCounter(targetValue, repoId) {
             clearInterval(timer);
             currentValue = targetValue;
         }
-              element.textContent = Math.floor(currentValue).toLocaleString() + " downloads";
-    }, 16); 
+        element.textContent = Math.floor(currentValue).toLocaleString() + " downloads";
+    }, 16);
 }
 
 refreshRepo();
