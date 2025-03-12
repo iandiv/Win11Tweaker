@@ -22,8 +22,8 @@ namespace Win11_Tweaker
             _windowHelper = new WindowHelper(this);
 
             _windowHelper.MicaEnabled = true;
-            _windowHelper.WindowSize = (710, 850);
-            _windowHelper.MinimumSize = (710, 700);
+            _windowHelper.WindowSize = (570, 670);
+            _windowHelper.MinimumSize = (570, 670);
 
             ToggleStateHelper.LoadToggleStates(this.Content, runReg);
             LoadHotkey();
@@ -39,7 +39,7 @@ namespace Win11_Tweaker
         }
         private async void GitHubButton_Click(object sender, RoutedEventArgs e)
         {
-            var uri = new Uri("https://github.com/iandiv"); // Replace with your GitHub repo URL
+            var uri = new Uri("https://github.com/iandiv"); 
             await Windows.System.Launcher.LaunchUriAsync(uri);
         }
         private async void CoffeeButton_Click(object sender, RoutedEventArgs e)

@@ -19,8 +19,14 @@ namespace Win11_Tweaker.Helpers
         private MicaBackdrop _micaBackdrop;
         private bool _micaEnabled;
 
-        private int _minWidth = 710;
-        private int _minHeight = 700;
+        private int _minWidth = 570;
+        private int _minHeight = 600;
+
+        // Add DPI-related imports and constants
+        [DllImport("user32.dll")]
+        private static extern int GetDpiForWindow(IntPtr hWnd);
+
+        private const int USER_DEFAULT_SCREEN_DPI = 96;
 
         public delegate int SUBCLASSPROC(IntPtr hWnd, uint uMsg, IntPtr wParam, IntPtr lParam, IntPtr uIdSubclass, uint dwRefData);
 
@@ -48,7 +54,6 @@ namespace Win11_Tweaker.Helpers
             _window = window ?? throw new ArgumentNullException(nameof(window));
             _subClassDelegate = new SUBCLASSPROC(WindowSubClass);
             InitializeWindow();
-
         }
 
         /// <summary>
@@ -96,6 +101,15 @@ namespace Win11_Tweaker.Helpers
             set => SetSize(value.Width, value.Height);
         }
 
+        /// <summary>
+        /// Gets the current DPI scaling factor for the window
+        /// </summary>
+        public float GetDpiScale()
+        {
+            int dpi = GetDpiForWindow(_hWnd);
+            return (float)dpi / USER_DEFAULT_SCREEN_DPI;
+        }
+
         private void InitializeWindow()
         {
             _hWnd = WindowNative.GetWindowHandle(_window);
@@ -114,7 +128,6 @@ namespace Win11_Tweaker.Helpers
                     UpdateTheme(root.ActualTheme);
                 };
             }
-
         }
 
         private void UpdateTheme(ElementTheme newTheme)
@@ -133,7 +146,6 @@ namespace Win11_Tweaker.Helpers
             ThemeHelper.UpdateTheme(newTheme);
         }
 
-
         private void RefreshThemeResources()
         {
             if (_window.Content is FrameworkElement root)
@@ -142,12 +154,25 @@ namespace Win11_Tweaker.Helpers
                 root.RequestedTheme = root.ActualTheme; // Force UI refresh
             }
         }
+
         /// <summary>
-        /// Sets the window size.
+        /// Sets the window size, accounting for display scaling.
         /// </summary>
         public void SetSize(int width, int height)
         {
-            _appWindow.Resize(new SizeInt32(width, height));
+            // Apply DPI scaling when setting size
+            float scale = GetDpiScale();
+            int scaledWidth = (int)(width * scale);
+            int scaledHeight = (int)(height * scale);
+            _appWindow.Resize(new SizeInt32(scaledWidth, scaledHeight));
+        }
+
+        /// <summary>
+        /// Sets the logical window size, accounting for display scaling.
+        /// </summary>
+        public void SetLogicalSize(int logicalWidth, int logicalHeight)
+        {
+            _appWindow.Resize(new SizeInt32(logicalWidth, logicalHeight));
         }
 
         /// <summary>
@@ -178,7 +203,6 @@ namespace Win11_Tweaker.Helpers
             _window.SystemBackdrop = _micaBackdrop;
         }
 
-
         /// <summary>
         /// Centers the window on the screen.
         /// </summary>
@@ -204,6 +228,7 @@ namespace Win11_Tweaker.Helpers
 
             _window.SetTitleBar(null);
         }
+
         private void UpdateTitleBarColors()
         {
             var titleBar = _appWindow.TitleBar;
@@ -220,8 +245,12 @@ namespace Win11_Tweaker.Helpers
             if (uMsg == WM_GETMINMAXINFO)
             {
                 MINMAXINFO mmi = (MINMAXINFO)Marshal.PtrToStructure(lParam, typeof(MINMAXINFO));
-                mmi.ptMinTrackSize.X = _minWidth;
-                mmi.ptMinTrackSize.Y = _minHeight;
+
+                // Apply DPI scaling to minimum size
+                float scale = GetDpiScale();
+                mmi.ptMinTrackSize.X = (int)(_minWidth * scale);
+                mmi.ptMinTrackSize.Y = (int)(_minHeight * scale);
+
                 Marshal.StructureToPtr(mmi, lParam, false);
                 return 0;
             }
